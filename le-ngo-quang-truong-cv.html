@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le Ngo Quang Truong — Senior Mobile &amp; Full-Stack Developer</title>
+<style>
+  :root{
+    --ink:#1f2933;
+    --muted:#5c6773;
+    --line:#e3e8ee;
+    --accent:#0b6e99;
+    --accent-soft:#eef5f9;
+    --sidebar:#1f2933;
+    --sidebar-ink:#e8edf2;
+    --sidebar-muted:#9aa7b4;
+    --paper:#ffffff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);
+    background:#f1f4f8;
+    line-height:1.55;
+    font-size:15px;
+    padding:32px 16px;
+  }
+  .page{
+    max-width:980px;
+    margin:0 auto;
+    background:var(--paper);
+    display:grid;
+    grid-template-columns:300px 1fr;
+    box-shadow:0 10px 40px rgba(20,40,60,.12);
+    border-radius:10px;
+    overflow:hidden;
+  }
+  /* Sidebar */
+  .side{
+    background:var(--sidebar);
+    color:var(--sidebar-ink);
+    padding:40px 28px;
+  }
+  .side h1{font-size:24px;line-height:1.2;font-weight:700;letter-spacing:.2px}
+  .side .role{color:#7fd0ee;font-size:14px;font-weight:600;margin-top:6px;letter-spacing:.4px;text-transform:uppercase}
+  .side .block{margin-top:30px}
+  .side h2{
+    font-size:12px;text-transform:uppercase;letter-spacing:1.4px;
+    color:#7fd0ee;font-weight:700;margin-bottom:12px;
+    border-bottom:1px solid rgba(255,255,255,.12);padding-bottom:7px;
+  }
+  .contact{list-style:none;font-size:13.5px}
+  .contact li{display:flex;gap:9px;margin-bottom:9px;color:var(--sidebar-ink);word-break:break-word}
+  .contact .ic{color:#7fd0ee;flex:0 0 16px;text-align:center}
+  .contact a{color:var(--sidebar-ink);text-decoration:none}
+  .contact a:hover{text-decoration:underline}
+  .skill-group{margin-bottom:14px}
+  .skill-group .lbl{font-size:12px;color:var(--sidebar-muted);text-transform:uppercase;letter-spacing:.6px;margin-bottom:5px}
+  .chips{display:flex;flex-wrap:wrap;gap:6px}
+  .chip{
+    background:rgba(127,208,238,.14);
+    color:#d7eefa;border:1px solid rgba(127,208,238,.25);
+    font-size:12px;padding:3px 9px;border-radius:20px;
+  }
+  .side p.lang{font-size:13.5px;color:var(--sidebar-ink)}
+  /* Main */
+  .main{padding:40px 38px}
+  section{margin-bottom:30px}
+  section:last-child{margin-bottom:0}
+  .main h2{
+    font-size:14px;text-transform:uppercase;letter-spacing:1.6px;
+    color:var(--accent);font-weight:700;margin-bottom:14px;
+    display:flex;align-items:center;gap:10px;
+  }
+  .main h2::after{content:"";flex:1;height:1px;background:var(--line)}
+  .summary{color:var(--muted);font-size:14.5px}
+  .job{margin-bottom:20px}
+  .job:last-child{margin-bottom:0}
+  .job .top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+  .job .org{font-weight:700;font-size:15.5px}
+  .job .date{color:var(--muted);font-size:13px;white-space:nowrap}
+  .job .title{color:var(--accent);font-weight:600;font-size:13.5px;margin-top:1px}
+  .job ul{margin:8px 0 0 18px;color:var(--muted);font-size:14px}
+  .job ul li{margin-bottom:4px}
+  .proj{padding:13px 0;border-bottom:1px solid var(--line)}
+  .proj:last-child{border-bottom:none}
+  .proj .name{font-weight:700;font-size:14.5px}
+  .proj .name a{color:var(--accent);text-decoration:none;font-weight:500;font-size:12.5px;margin-left:8px}
+  .proj .name a:hover{text-decoration:underline}
+  .proj p{color:var(--muted);font-size:13.5px;margin-top:3px}
+  .edu .top{display:flex;justify-content:space-between;flex-wrap:wrap}
+  .edu .org{font-weight:700}
+  .edu .deg{color:var(--muted);font-size:14px}
+  .edu .date{color:var(--muted);font-size:13px}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:6px 28px}
+  .two .proj{border-bottom:1px solid var(--line)}
+  @media (max-width:760px){
+    .page{grid-template-columns:1fr}
+    .main{padding:30px 24px}
+    .two{grid-template-columns:1fr}
+  }
+  @media print{
+    body{background:#fff;padding:0;font-size:12px}
+    .page{box-shadow:none;border-radius:0;max-width:none}
+    .side{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <aside class="side">
+    <h1>Le Ngo Quang Truong</h1>
+    <div class="role">Senior Mobile &amp; Full-Stack Developer</div>
+
+    <div class="block">
+      <h2>Contact</h2>
+      <ul class="contact">
+        <li><span class="ic">✆</span><span>+84 975 565 801</span></li>
+        <li><span class="ic">✉</span><a href="mailto:quangtruong4688@gmail.com">quangtruong4688@gmail.com</a></li>
+        <li><span class="ic">in</span><a href="https://www.linkedin.com/in/truong-le-ngo-quang-47aa6580/">linkedin.com/in/truong-le-ngo-quang</a></li>
+        <li><span class="ic">⌖</span><span>Ho Chi Minh City, Vietnam</span></li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <h2>Skills</h2>
+      <div class="skill-group">
+        <div class="lbl">Languages &amp; UI</div>
+        <div class="chips">
+          <span class="chip">Swift</span><span class="chip">Objective-C</span>
+          <span class="chip">SwiftUI</span><span class="chip">RxSwift</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="lbl">Cross-Platform &amp; Web</div>
+        <div class="chips">
+          <span class="chip">Flutter</span><span class="chip">Riverpod</span><span class="chip">Drift</span>
+          <span class="chip">Nuxt 3</span><span class="chip">Vue.js</span><span class="chip">TypeScript</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="lbl">Backend &amp; Infra</div>
+        <div class="chips">
+          <span class="chip">NestJS</span><span class="chip">PostgreSQL</span><span class="chip">Prisma</span>
+          <span class="chip">Redis / BullMQ</span><span class="chip">Socket.IO</span><span class="chip">OpenAPI</span>
+          <span class="chip">Docker</span><span class="chip">DigitalOcean</span><span class="chip">Cloudflare</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="lbl">Frameworks &amp; Services</div>
+        <div class="chips">
+          <span class="chip">Firebase</span><span class="chip">CocoaPods</span><span class="chip">SPM</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="lbl">Tools</div>
+        <div class="chips">
+          <span class="chip">Xcode</span><span class="chip">VS Code</span>
+          <span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">GitLab</span>
+          <span class="chip">Turborepo</span><span class="chip">Bitrise</span><span class="chip">Playwright</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="lbl">Design &amp; PM</div>
+        <div class="chips">
+          <span class="chip">Figma</span><span class="chip">Zeplin</span>
+          <span class="chip">Jira</span><span class="chip">Trello</span><span class="chip">Monday</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="lbl">AI-Augmented Development</div>
+        <div class="chips">
+          <span class="chip">Cursor</span><span class="chip">Claude / Claude Code</span>
+          <span class="chip">Agentic Workflows</span><span class="chip">Custom Agents &amp; Skills</span>
+          <span class="chip">Prompt Engineering</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="lbl">Additional</div>
+        <div class="chips">
+          <span class="chip">React</span><span class="chip">React Native</span>
+          <span class="chip">HTML/CSS/JS</span><span class="chip">GraphQL</span><span class="chip">AWS</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <h2>Languages</h2>
+      <p class="lang">Vietnamese (native), English (professional)</p>
+    </div>
+  </aside>
+
+  <main class="main">
+    <section>
+      <h2>Profile</h2>
+      <p class="summary">Senior iOS Developer with over a decade of experience building and maintaining feature-rich mobile applications in Swift, Objective-C, and RxSwift, and since July 2026 a freelance full-stack engineer building XPOS, a multi-tenant POS platform on NestJS, PostgreSQL, Flutter and Nuxt. Skilled in integrating Firebase services, managing dependencies with CocoaPods and SPM, and leading Git-based workflows to deliver reliable, user-centric products. A hands-on team lead focused on clean architecture, code quality, and mentoring developers to drive product excellence. Actively applies AI-augmented development — designing agentic workflows, custom agents, and reusable skills with Cursor and Claude — to accelerate delivery and raise team productivity.</p>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+
+      <div class="job">
+        <div class="top">
+          <div>
+            <div class="org">XPOS - Xtech Digital</div>
+            <div class="title">Freelance Full-Stack Engineer</div>
+          </div>
+          <div class="date">Jul 2026 – Present</div>
+        </div>
+        <ul>
+          <li>Building XPOS, a multi-tenant, offline-first point-of-sale platform for Vietnamese F&amp;B merchants: a Flutter POS app, Nuxt merchant dashboard, admin console and kitchen display on one NestJS backend.</li>
+          <li>Designed tenant isolation with PostgreSQL row-level security, a contract-first OpenAPI API (~130 operations) with generated TypeScript clients, and real-time updates over Socket.IO and BullMQ.</li>
+          <li>Built the POS sync engine with a Drift local database, delta pull, idempotent push and client-generated ULIDs, so orders keep flowing when the network drops.</li>
+          <li>Engineered the team’s AI development workflow in Claude Code: 30+ custom skills, slash commands and hooks enforcing spec-first changes, isolated git worktrees, lint/typecheck/test gates and Playwright end-to-end checks before every merge request.</li>
+          <li>Delivered the Phase 1 milestone (19 features) in a Turborepo monorepo with Bitrise CI, hosted on DigitalOcean and Cloudflare.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="top">
+          <div>
+            <div class="org">Neo Consulting Vietnam</div>
+            <div class="title">iOS Team Lead</div>
+          </div>
+          <div class="date">2022 – Jun 2026</div>
+        </div>
+        <ul>
+          <li>Led the iOS team, setting technical direction and mentoring developers across multiple client projects.</li>
+          <li>Architected and maintained a large-scale, real-time platform for a regulated European operator, deploying localized builds tailored to per-market compliance requirements.</li>
+          <li>Spearheaded a comprehensive refactoring initiative, modularizing a large legacy codebase into a reusable SDK for seamless integration across client applications.</li>
+          <li>Engineered a flexible theming system that lets clients deeply customize and brand the user interface.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="top">
+          <div>
+            <div class="org">Ekino Vietnam</div>
+            <div class="title">Senior iOS Developer &amp; Mobile Team Lead</div>
+          </div>
+          <div class="date">2016 – 2021</div>
+        </div>
+        <ul>
+          <li>Delivered iOS applications for international clients in healthcare, insurance, and retail.</li>
+          <li>Led the mobile team, owning architecture decisions, code reviews, and delivery quality.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="top">
+          <div>
+            <div class="org">Global CyberSoft Vietnam</div>
+            <div class="title">iOS Developer</div>
+          </div>
+          <div class="date">May 2011 – 2016</div>
+        </div>
+        <ul>
+          <li>Developed and maintained native iOS applications across a range of outsourced client projects.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Key Projects</h2>
+
+      <div class="proj">
+        <div class="name">XPOS — POS Platform (Freelance)</div>
+        <p>A multi-tenant, offline-first POS for F&amp;B merchants across five surfaces: Flutter POS with offline sync, Nuxt merchant dashboard and admin console, a kitchen display, and a NestJS + PostgreSQL backend with row-level security and a contract-first OpenAPI API.</p>
+      </div>
+
+      <div class="proj">
+        <div class="name">NEO Core Project</div>
+        <p>Architected and maintained a large-scale, real-time platform for a regulated European operator. Built an end-to-end SDK spanning UI, API, and user-tracking layers, handling high-volume transactional workflows, real-time error handling, and live status updates, with a configurable theming system for client branding.</p>
+      </div>
+
+      <div class="proj">
+        <div class="name">Fitness Companion (Prototype)</div>
+        <p>Designed and built a prototype fitness app that generates personalized recommendations based on the user's age and body metrics — suggesting calorie-burning activities and healthy meals. Sets tailored goals for users to follow and tracks their workout progress over time.</p>
+      </div>
+
+      <div class="proj">
+        <div class="name">Henner<a href="https://apps.apple.com/vn/app/henner/id1131180790?l=vi">App Store</a></div>
+        <p>Implemented the e-claims feature, enabling users to submit claims, track claim status, and receive notifications.</p>
+      </div>
+
+      <div class="proj">
+        <div class="name">Sanofi — Medi Watch</div>
+        <p>Developed a news app for Sanofi, pulling content from the company CMS for doctors.</p>
+      </div>
+
+      <div class="proj">
+        <div class="name">Spacetime Capsule<a href="https://apps.apple.com/mt/app/spacetime-capsule/id1533808582">App Store</a></div>
+        <p>Built an app for creating and sharing user-generated experiences, with media-rich messaging tied to a specific time and location.</p>
+      </div>
+
+      <div class="proj">
+        <div class="name">Healthcare-Locator SDK<a href="https://www.iqvia.com/solutions/technologies/developer/healthcare-locator-sdk">Docs</a></div>
+        <p>Built a mobile SDK for enterprise clients covering UI, workflows, and data interaction to locate, display, and contact healthcare services.</p>
+      </div>
+
+      <div class="proj">
+        <div class="name">Goo Mobile App<a href="https://apps.apple.com/vn/app/goo-ch%E1%BA%A1y-xe-%C4%91i-b%E1%BB%99-nh%E1%BA%A1n-qu%C3%A0/id1638477773?l=vi">App Store</a></div>
+        <p>Built a loyalty app that tracks users' daily physical activity, including walking and driving, and rewards them with points redeemable at partner merchants.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Other Projects</h2>
+      <div class="two">
+        <div class="proj"><div class="name">ATM &amp; Bank</div><p>Location-based service mapping ATMs and bank branches across Vietnam.</p></div>
+        <div class="proj"><div class="name">MAP ALONE</div><p>Streamlined check-in app for the Japanese market, focused on social discovery.</p></div>
+        <div class="proj"><div class="name">DIRECTV Second Screen</div><p>Companion app enhancing user interaction with live streaming for DIRECTV USA.</p></div>
+        <div class="proj"><div class="name">Wave Money</div><p>Premier e-wallet application built for the Myanmar market.</p></div>
+        <div class="proj"><div class="name">ACB Mobile Banking</div><p>Led the R&amp;D phase for ACB Bank's official mobile banking application.</p></div>
+        <div class="proj"><div class="name">Boostjuice Vietnam</div><p>Customer-facing app for juice ordering and rewards.</p></div>
+        <div class="proj"><div class="name">GAP+</div><p>E-commerce app for browsing and purchasing GAP products.</p></div>
+        <div class="proj"><div class="name">Random Selector &amp; Webfactory</div><p>Internal tools for managing company events and tracking employee work logs.</p></div>
+      </div>
+    </section>
+
+    <section class="edu">
+      <h2>Education</h2>
+      <div class="top">
+        <div>
+          <div class="org">Ho Chi Minh City Open University</div>
+          <div class="deg">Bachelor of Science</div>
+        </div>
+        <div class="date">2006 – 2011</div>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+</html>

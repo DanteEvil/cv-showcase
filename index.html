@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Le Ngo Quang Truong — Senior Mobile &amp; Full-Stack Developer</title>
+<meta name="description" content="Le Ngo Quang Truong — Senior Mobile &amp; Full-Stack Developer and former iOS Team Lead. 15 years building reliable, user-centric products in Swift, Flutter, NestJS and Nuxt.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:#11161b;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  ::selection{background:#6f879c;color:#fffdf9}
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+  .atext .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.16em;margin-bottom:-.16em}
+  .atext .wi{display:inline-block;transform:translateY(120%);transition:transform .9s cubic-bezier(.2,.78,.2,1)}
+  .atext.in .wi{transform:translateY(0)}
+  @media (prefers-reduced-motion:reduce){
+    .atext .wi{transform:none!important;transition:none!important}
+    .reveal{opacity:1!important;transform:none!important}
+  }
+  #top,#skills,#experience,#work,#contact{scroll-margin-top:92px}
+  @media (max-width:760px){
+    nav{padding:15px 20px!important}
+    .navlinks{gap:12px!important}
+    .navlinks a[href^="#"]{display:none!important}
+    .navlinks button,.navlinks a[href^="mailto"]{font-size:13px!important;padding:8px 13px!important}
+    .exp-row,.work-row,.skill-row{grid-template-columns:1fr!important;gap:12px 0!important;padding:24px 0!important}
+    .hero-foot{flex-direction:column!important;align-items:flex-start!important;gap:24px!important;padding-top:40px!important}
+    .hero-para{text-align:left!important;max-width:46ch!important}
+    .mail{white-space:normal!important;word-break:break-word;font-size:clamp(24px,8vw,46px)!important}
+  }
+  .print-cv{display:none}
+  @media print{
+    @page{margin:13mm 12mm}
+    html,body{background:#fff!important}
+    #prism,#prog,.site-content{display:none!important}
+    #root{background:#fff!important;min-height:0!important;color:#15191e!important}
+    .print-cv{display:block!important}
+  }
+</style>
+</head>
+<body>
+
+<div id="root" style="font-family:'Inter',ui-sans-serif,system-ui,sans-serif;background:#11161b;color:#fffdf9;min-height:100vh;overflow-x:hidden;position:relative;font-weight:400">
+
+  <canvas id="prism" style="position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;-webkit-mask-image:radial-gradient(72% 68% at 76% 32%,#000 30%,transparent 80%);mask-image:radial-gradient(72% 68% at 76% 32%,#000 30%,transparent 80%)"></canvas>
+  <div id="prog" style="position:fixed;top:0;left:0;height:2px;width:0;background:#6f879c;z-index:60;pointer-events:none"></div>
+
+  <div class="site-content" style="position:relative;z-index:1">
+  <!-- NAV -->
+  <nav style="position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:22px 5.5vw;backdrop-filter:blur(6px);background:linear-gradient(180deg,rgba(17,22,27,.92),rgba(17,22,27,0))">
+    <a href="#top" style="font-size:17px;font-weight:400;color:#fffdf9;text-decoration:none;letter-spacing:-0.01em">LNQT<span style="color:#6f879c">.</span></a>
+    <div class="navlinks" style="display:flex;align-items:center;gap:28px">
+      <a href="#skills" class="navlink" style="font-size:14px;color:#fffdf9;text-decoration:none;letter-spacing:0.02em;text-transform:uppercase;opacity:.85">Skills</a>
+      <a href="#experience" class="navlink" style="font-size:14px;color:#fffdf9;text-decoration:none;letter-spacing:0.02em;text-transform:uppercase;opacity:.85">Experience</a>
+      <a href="#work" class="navlink" style="font-size:14px;color:#fffdf9;text-decoration:none;letter-spacing:0.02em;text-transform:uppercase;opacity:.85">Work</a>
+      <button data-print-cv style="font-family:inherit;cursor:pointer;font-size:14px;letter-spacing:0.02em;text-transform:uppercase;color:#101418;background:#6f879c;border:1px solid #6f879c;border-radius:5px;padding:9px 16px;display:inline-flex;align-items:center;gap:7px" style-hover="background:#fffdf9;border-color:#fffdf9">Get CV <span style="font-size:15px;line-height:1">↓</span></button>
+      <a href="mailto:quangtruong4688@gmail.com" style="font-size:14px;color:#fffdf9;text-decoration:none;letter-spacing:0.02em;text-transform:uppercase;border:1px solid #fffdf9;border-radius:5px;padding:9px 16px" style-hover="border-color:#6f879c;color:#6f879c">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="top" style="position:relative;min-height:100vh;display:flex;flex-direction:column;padding:150px 5.5vw 48px;overflow:hidden">
+    <div style="position:relative;z-index:2">
+      <div class="atext" style="font-size:18px;letter-spacing:0.02em;color:#fffdf9;opacity:.82">Senior Mobile &amp; Full-Stack Developer · Ho Chi Minh City · 15 years in software</div>
+    </div>
+
+    <h1 class="atext" style="position:relative;z-index:2;margin-top:auto;font-size:clamp(56px,9.6vw,136px);font-weight:400;line-height:.96;letter-spacing:-0.02em;color:#fffdf9">Le Ngo<br>Quang <span style="font-weight:700">Truong</span></h1>
+
+    <div class="hero-foot" style="position:relative;z-index:2;margin-top:auto;padding-top:56px;display:flex;justify-content:space-between;align-items:flex-end;gap:48px;flex-wrap:wrap">
+      <div style="display:flex;align-items:center;gap:14px;font-size:14px;letter-spacing:0.04em;text-transform:uppercase;color:#fffdf9;opacity:.62;white-space:nowrap">
+        <span style="display:inline-block;width:34px;height:1px;background:#6f879c"></span>Scroll
+      </div>
+      <p class="atext hero-para" style="max-width:44ch;font-size:18px;line-height:1.5;color:#fffdf9;opacity:.82;text-align:right">A hands-on iOS team lead turned freelance full-stack engineer — now building a multi-tenant POS platform end to end, driven by <span style="font-weight:700">AI-augmented workflows</span> that raise how fast a whole team can deliver.</p>
+    </div>
+  </header>
+
+  <!-- PROFILE / MANIFESTO -->
+  <section class="reveal" style="padding:108px 5.5vw;position:relative">
+    <div style="font-size:18px;letter-spacing:0.02em;color:#6f879c;margin-bottom:30px;text-transform:uppercase">01 — Profile</div>
+    <p class="atext" style="font-size:clamp(30px,4.4vw,56px);font-weight:400;line-height:1.13;letter-spacing:-0.02em;color:#fffdf9;max-width:24ch">Over a decade building reliable, user-centric mobile products — leading architecture, code quality, and the developers who ship it.</p>
+    <p style="margin-top:42px;max-width:64ch;font-size:18px;line-height:1.5;color:#fffdf9;opacity:.78">Eleven years leading iOS work in Swift, Objective-C and RxSwift; since mid-2026 a freelance full-stack engineer shipping a NestJS, Flutter and Nuxt platform across five client surfaces. Focused on clean architecture, offline-first sync and mentoring — and on agentic workflows, custom agents and reusable skills with Claude Code that turn specs into tested, reviewed merge requests.</p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" style="padding:60px 5.5vw 108px">
+    <div class="reveal" style="font-size:18px;letter-spacing:0.02em;color:#6f879c;margin-bottom:50px;text-transform:uppercase">02 — Toolkit</div>
+    <div id="skills-list"></div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" style="padding:60px 5.5vw 108px">
+    <div class="reveal" style="font-size:18px;letter-spacing:0.02em;color:#6f879c;margin-bottom:50px;text-transform:uppercase">03 — Experience</div>
+    <div id="jobs-list"></div>
+  </section>
+
+  <!-- SELECTED WORK -->
+  <section id="work" style="padding:60px 5.5vw 108px;position:relative">
+    <div class="reveal" style="position:relative;font-size:18px;letter-spacing:0.02em;color:#6f879c;margin-bottom:14px;text-transform:uppercase">04 — Selected Work</div>
+    <h2 class="reveal atext" style="position:relative;font-size:clamp(40px,6vw,84px);font-weight:400;line-height:1;letter-spacing:-0.02em;color:#fffdf9;margin-bottom:56px">Things I've shipped.</h2>
+
+    <div id="work-list"></div>
+    <div style="border-top:1px solid #ffffff1f"></div>
+  </section>
+
+  <!-- OTHER PROJECTS -->
+  <section style="padding:60px 5.5vw 108px">
+    <div class="reveal" style="font-size:18px;letter-spacing:0.02em;color:#6f879c;margin-bottom:50px;text-transform:uppercase">05 — Also Built</div>
+    <div id="other-list" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:40px 56px"></div>
+  </section>
+
+  <!-- FOOTER / CONTACT -->
+  <footer id="contact" style="position:relative;padding:108px 5.5vw 72px;border-top:1px solid #ffffff1f;overflow:hidden">
+    <div style="position:absolute;inset:0;pointer-events:none;background:radial-gradient(90% 130% at 88% 100%,rgba(16,16,16,.5),rgba(16,16,16,0) 60%)"></div>
+    <div style="position:relative;z-index:2">
+      <div class="reveal" style="font-size:18px;letter-spacing:0.02em;color:#6f879c;margin-bottom:24px;text-transform:uppercase">Let's build something</div>
+      <a class="reveal atext mail" href="mailto:quangtruong4688@gmail.com" style="display:inline-block;font-size:clamp(26px,5.1vw,68px);font-weight:400;line-height:1.05;letter-spacing:-0.02em;color:#fffdf9;text-decoration:none;white-space:nowrap" style-hover="color:#6f879c">quangtruong4688@gmail.com</a>
+
+      <div class="reveal" style="margin-top:64px;display:flex;flex-wrap:wrap;gap:18px 40px;align-items:center">
+        <a href="tel:+84975565801" style="font-size:17px;color:#fffdf9;text-decoration:none;opacity:.82" style-hover="opacity:1;color:#6f879c">+84 975 565 801</a>
+        <a href="https://www.linkedin.com/in/truong-le-ngo-quang-47aa6580/" target="_blank" rel="noopener" style="font-size:17px;color:#fffdf9;text-decoration:none;opacity:.82" style-hover="opacity:1;color:#6f879c">LinkedIn ↗</a>
+        <span style="font-size:17px;color:#fffdf9;opacity:.82">Ho Chi Minh City, Vietnam</span>
+        <span style="font-size:17px;color:#fffdf9;opacity:.82">Vietnamese (native) · English (professional)</span>
+      </div>
+
+      <div class="reveal" style="margin-top:44px">
+        <button data-print-cv style="font-family:inherit;cursor:pointer;display:inline-flex;align-items:center;gap:11px;font-size:15px;letter-spacing:0.04em;text-transform:uppercase;color:#101418;background:#6f879c;border:none;border-radius:6px;padding:16px 28px" style-hover="background:#fffdf9">Download CV (PDF) <span style="font-size:17px;line-height:1">↓</span></button>
+      </div>
+
+      <div style="margin-top:64px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;font-size:14px;color:#fffdf9;opacity:.6;letter-spacing:0.02em">
+        <span>B.Sc — Ho Chi Minh City Open University, 2006–2011</span>
+        <span>© Le Ngo Quang Truong</span>
+      </div>
+    </div>
+  </footer>
+  </div>
+
+  <!-- PRINT CV (PDF export) -->
+  <div class="print-cv" style="font-family:'Inter',ui-sans-serif,sans-serif;color:#15191e;font-size:10.5pt;line-height:1.5;-webkit-print-color-adjust:exact;print-color-adjust:exact">
+    <div style="border-bottom:2px solid #15191e;padding-bottom:13px;margin-bottom:16px">
+      <div style="font-size:26pt;font-weight:700;letter-spacing:-0.02em;line-height:1">Le Ngo Quang Truong</div>
+      <div style="font-size:12pt;color:#6f879c;font-weight:600;margin-top:6px">Senior Mobile &amp; Full-Stack Developer · Former iOS Team Lead</div>
+      <div style="font-size:9.5pt;color:#5b6b78;margin-top:8px">quangtruong4688@gmail.com&nbsp; ·&nbsp; +84 975 565 801&nbsp; ·&nbsp; Ho Chi Minh City, Vietnam&nbsp; ·&nbsp; linkedin.com/in/truong-le-ngo-quang</div>
+    </div>
+
+    <p style="margin:0 0 16px;color:#33404a">Senior iOS developer and team lead with over a decade building reliable, user-centric mobile products — owning architecture, code quality, and the developers who ship them. Since July 2026 a freelance full-stack engineer building XPOS, a multi-tenant POS platform on NestJS, PostgreSQL, Flutter and Nuxt, delivered through agentic AI workflows in Claude Code.</p>
+
+    <div style="font-size:9pt;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#6f879c;border-bottom:1px solid #d9dee3;padding-bottom:5px;margin:0 0 9px">Toolkit</div>
+    <div id="print-skills" style="margin-bottom:16px"></div>
+
+    <div style="font-size:9pt;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#6f879c;border-bottom:1px solid #d9dee3;padding-bottom:5px;margin:0 0 10px">Experience</div>
+    <div id="print-jobs"></div>
+
+    <div style="font-size:9pt;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#6f879c;border-bottom:1px solid #d9dee3;padding-bottom:5px;margin:14px 0 10px">Selected Work</div>
+    <div id="print-projects"></div>
+
+    <div style="font-size:9pt;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#6f879c;border-bottom:1px solid #d9dee3;padding-bottom:5px;margin:14px 0 10px">Also Built</div>
+    <div id="print-other" style="columns:2;column-gap:26px;font-size:9.5pt;color:#33404a"></div>
+
+    <div style="font-size:9pt;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#6f879c;border-bottom:1px solid #d9dee3;padding-bottom:5px;margin:16px 0 10px">Education &amp; Languages</div>
+    <div style="display:flex;justify-content:space-between;gap:16px"><div><span style="font-weight:700">B.Sc</span> — Ho Chi Minh City Open University</div><div style="color:#5b6b78;white-space:nowrap">2006 — 2011</div></div>
+    <div style="margin-top:4px;color:#33404a">Languages: Vietnamese (native) · English (professional)</div>
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  // ---------------------------------------------------------------------------
+  // Content data
+  // ---------------------------------------------------------------------------
+  var DATA = {
+    jobs: [
+      {
+        org: 'XPOS - Xtech Digital',
+        title: 'Freelance Full-Stack Engineer',
+        date: 'Jul 2026 — Present',
+        points: [
+          'Building XPOS, a multi-tenant, offline-first point-of-sale platform for Vietnamese F&B merchants: a Flutter POS app, Nuxt merchant dashboard, admin console and kitchen display on one NestJS backend.',
+          'Designed tenant isolation with PostgreSQL row-level security, a contract-first OpenAPI API (~130 operations) with generated TypeScript clients, and real-time updates over Socket.IO and BullMQ.',
+          'Built the POS sync engine with a Drift local database, delta pull, idempotent push and client-generated ULIDs, so orders keep flowing when the network drops.',
+          'Engineered the team’s AI development workflow in Claude Code: 30+ custom skills, slash commands and hooks enforcing spec-first changes, isolated git worktrees, lint/typecheck/test gates and Playwright end-to-end checks before every merge request.',
+          'Delivered the Phase 1 milestone (19 features) in a Turborepo monorepo with Bitrise CI, hosted on DigitalOcean and Cloudflare.'
+        ]
+      },
+      {
+        org: 'Neo Consulting Vietnam',
+        title: 'iOS Team Lead',
+        date: '2022 — Jun 2026',
+        points: [
+          'Led the iOS team, setting technical direction and mentoring developers across multiple client projects.',
+          'Architected and maintained a large-scale, real-time platform for a regulated European operator, deploying localized builds tailored to per-market compliance requirements.',
+          'Spearheaded a refactoring initiative, modularizing a large legacy codebase into a reusable SDK for seamless integration across client applications.',
+          'Engineered a flexible theming system that lets clients deeply customize and brand the user interface.'
+        ]
+      },
+      {
+        org: 'Ekino Vietnam',
+        title: 'Senior iOS Developer & Mobile Team Lead',
+        date: '2016 — 2021',
+        points: [
+          'Delivered iOS applications for international clients in healthcare, insurance, and retail.',
+          'Led the mobile team, owning architecture decisions, code reviews, and delivery quality.'
+        ]
+      },
+      {
+        org: 'Global CyberSoft Vietnam',
+        title: 'iOS Developer',
+        date: 'May 2011 — 2016',
+        points: [
+          'Developed and maintained native iOS applications across a range of outsourced client projects.'
+        ]
+      }
+    ],
+    projects: [
+      { name: 'XPOS — POS Platform (Freelance)', link: '', href: '#work', desc: 'A multi-tenant, offline-first POS for F&B merchants across five surfaces: Flutter POS with offline sync, Nuxt merchant dashboard and admin console, a kitchen display, and a NestJS + PostgreSQL backend with row-level security and a contract-first OpenAPI API.' },
+      { name: 'NEO Core Project', link: '', href: '#work', desc: 'A large-scale real-time platform for a regulated European operator — an end-to-end SDK across UI, API, and user-tracking layers, handling high-volume transactional workflows, live status updates, and a configurable theming system for client branding.' },
+      { name: 'Fitness Companion', link: 'Prototype', href: '#work', desc: 'A prototype fitness app generating personalized recommendations from age and body metrics — calorie-burning activities, healthy meals, tailored goals, and workout progress tracking over time.' },
+      { name: 'Henner', link: 'App Store', href: 'https://apps.apple.com/vn/app/henner/id1131180790?l=vi', desc: 'Implemented the e-claims feature — submitting claims, tracking claim status, and receiving notifications.' },
+      { name: 'Spacetime Capsule', link: 'App Store', href: 'https://apps.apple.com/mt/app/spacetime-capsule/id1533808582', desc: 'An app for creating and sharing user-generated experiences, with media-rich messaging tied to a specific time and location.' },
+      { name: 'Healthcare-Locator SDK', link: 'Docs', href: 'https://www.iqvia.com/solutions/technologies/developer/healthcare-locator-sdk', desc: 'A mobile SDK for enterprise clients covering UI, workflows, and data interaction to locate, display, and contact healthcare services.' },
+      { name: 'Goo Mobile App', link: 'App Store', href: 'https://apps.apple.com/vn/app/goo-ch%E1%BA%A1y-xe-%C4%91i-b%E1%BB%99-nh%E1%BA%A1n-qu%C3%A0/id1638477773?l=vi', desc: 'A loyalty app tracking daily physical activity — walking and driving — rewarding users with points redeemable at partner merchants.' },
+      { name: 'Sanofi — Medi Watch', link: '', href: '#work', desc: 'A news app for Sanofi, pulling content from the company CMS for doctors.' }
+    ],
+    other: [
+      { name: 'ATM & Bank', desc: 'Location-based service mapping ATMs and bank branches across Vietnam.' },
+      { name: 'MAP ALONE', desc: 'Streamlined check-in app for the Japanese market, focused on social discovery.' },
+      { name: 'DIRECTV Second Screen', desc: 'Companion app enhancing interaction with live streaming for DIRECTV USA.' },
+      { name: 'Wave Money', desc: 'Premier e-wallet application built for the Myanmar market.' },
+      { name: 'ACB Mobile Banking', desc: "Led the R&D phase for ACB Bank's official mobile banking application." },
+      { name: 'Boostjuice Vietnam', desc: 'Customer-facing app for juice ordering and rewards.' },
+      { name: 'GAP+', desc: 'E-commerce app for browsing and purchasing GAP products.' },
+      { name: 'Random Selector & Webfactory', desc: 'Internal tools for managing company events and tracking employee work logs.' }
+    ],
+    skills: [
+      { label: 'Languages & UI', items: 'Swift · Objective-C · SwiftUI · RxSwift' },
+      { label: 'Cross-Platform & Web', items: 'Flutter · Riverpod · Drift · Nuxt 3 · Vue.js · TypeScript' },
+      { label: 'Backend & Infra', items: 'NestJS · PostgreSQL · Prisma · Redis / BullMQ · Socket.IO · OpenAPI · Docker · DigitalOcean · Cloudflare' },
+      { label: 'Frameworks & Services', items: 'Firebase · CocoaPods · SPM' },
+      { label: 'Tools', items: 'Xcode · VS Code · Git · GitHub · GitLab · Turborepo · Bitrise · Playwright' },
+      { label: 'Design & PM', items: 'Figma · Zeplin · Jira · Trello · Monday' },
+      { label: 'AI-Augmented Development', items: 'Cursor · Claude / Claude Code · Agentic Workflows · Custom Agents & Skills · Prompt Engineering' },
+      { label: 'Additional', items: 'React · React Native · HTML/CSS/JS · GraphQL · AWS' }
+    ]
+  };
+
+  function esc(s) {
+    return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+  function escAttr(s) {
+    return esc(s).replace(/"/g, '&quot;');
+  }
+
+  // ---------------------------------------------------------------------------
+  // Render content (web + print views) from data
+  // ---------------------------------------------------------------------------
+  function render() {
+    // -- Skills (web) --
+    document.getElementById('skills-list').innerHTML = DATA.skills.map(function (g) {
+      return '<div class="reveal skill-row" style="display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr);gap:18px 56px;padding:28px 0;border-top:1px solid #ffffff1f;align-items:baseline">' +
+        '<div style="font-size:14px;letter-spacing:0.04em;text-transform:uppercase;color:#fffdf9;opacity:.62">' + esc(g.label) + '</div>' +
+        '<div style="font-size:clamp(20px,2.2vw,28px);font-weight:400;letter-spacing:-0.01em;color:#fffdf9;line-height:1.35">' + esc(g.items) + '</div>' +
+      '</div>';
+    }).join('');
+
+    // -- Experience (web) --
+    document.getElementById('jobs-list').innerHTML = DATA.jobs.map(function (job) {
+      var pts = job.points.map(function (pt) {
+        return '<p style="font-size:17px;line-height:1.5;color:#fffdf9;opacity:.82;margin-bottom:14px;padding-left:22px;position:relative"><span style="position:absolute;left:0;top:11px;width:9px;height:1px;background:#6f879c"></span>' + esc(pt) + '</p>';
+      }).join('');
+      return '<div class="reveal exp-row" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:24px 56px;padding:36px 0;border-top:1px solid #ffffff1f">' +
+        '<div>' +
+          '<div style="font-size:clamp(28px,3.2vw,40px);font-weight:400;line-height:1.05;letter-spacing:-0.02em;color:#fffdf9">' + esc(job.org) + '</div>' +
+          '<div style="margin-top:12px;font-size:15px;color:#6f879c">' + esc(job.title) + '</div>' +
+          '<div style="margin-top:4px;font-size:14px;color:#fffdf9;opacity:.62">' + esc(job.date) + '</div>' +
+        '</div>' +
+        '<div>' + pts + '</div>' +
+      '</div>';
+    }).join('');
+
+    // -- Selected work (web) --
+    document.getElementById('work-list').innerHTML = DATA.projects.map(function (p) {
+      var tag = p.link ? '<span style="font-size:13px;letter-spacing:0.04em;text-transform:uppercase;color:#6f879c;border:1px solid #6f879c;border-radius:5px;padding:4px 9px;white-space:nowrap">' + esc(p.link) + ' ↗</span>' : '';
+      return '<a class="reveal work-row" href="' + escAttr(p.href) + '" target="_blank" rel="noopener" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:20px 56px;padding:34px 0;border-top:1px solid #ffffff1f;text-decoration:none;color:#fffdf9" style-hover="opacity:.78">' +
+        '<div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap">' +
+          '<div style="font-size:clamp(24px,2.8vw,34px);font-weight:400;line-height:1.08;letter-spacing:-0.02em">' + esc(p.name) + '</div>' + tag +
+        '</div>' +
+        '<p style="font-size:17px;line-height:1.5;opacity:.78;align-self:center">' + esc(p.desc) + '</p>' +
+      '</a>';
+    }).join('');
+
+    // -- Also built (web) --
+    document.getElementById('other-list').innerHTML = DATA.other.map(function (o) {
+      return '<div class="reveal">' +
+        '<div style="font-size:22px;font-weight:400;letter-spacing:-0.01em;color:#fffdf9;line-height:1.2">' + esc(o.name) + '</div>' +
+        '<p style="margin-top:10px;font-size:15px;line-height:1.5;color:#fffdf9;opacity:.7">' + esc(o.desc) + '</p>' +
+      '</div>';
+    }).join('');
+
+    // -- Print: toolkit --
+    document.getElementById('print-skills').innerHTML = DATA.skills.map(function (g) {
+      return '<div style="display:flex;gap:12px;margin-bottom:4px"><div style="flex:0 0 160px;font-weight:700">' + esc(g.label) + '</div><div style="color:#33404a">' + esc(g.items) + '</div></div>';
+    }).join('');
+
+    // -- Print: experience --
+    document.getElementById('print-jobs').innerHTML = DATA.jobs.map(function (job) {
+      var pts = job.points.map(function (pt) {
+        return '<div style="color:#33404a;padding-left:14px;position:relative;margin-bottom:3px"><span style="position:absolute;left:0;color:#6f879c">–</span>' + esc(pt) + '</div>';
+      }).join('');
+      return '<div style="margin-bottom:13px;break-inside:avoid">' +
+        '<div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px"><div style="font-size:11.5pt;font-weight:700">' + esc(job.org) + '</div><div style="font-size:9pt;color:#5b6b78;white-space:nowrap">' + esc(job.date) + '</div></div>' +
+        '<div style="font-size:10pt;color:#6f879c;font-weight:600;margin:1px 0 5px">' + esc(job.title) + '</div>' + pts +
+      '</div>';
+    }).join('');
+
+    // -- Print: selected work --
+    document.getElementById('print-projects').innerHTML = DATA.projects.map(function (p) {
+      return '<div style="margin-bottom:6px;break-inside:avoid"><span style="font-weight:700">' + esc(p.name) + '</span><span style="color:#33404a"> — ' + esc(p.desc) + '</span></div>';
+    }).join('');
+
+    // -- Print: also built --
+    document.getElementById('print-other').innerHTML = DATA.other.map(function (o) {
+      return '<div style="break-inside:avoid;margin-bottom:5px"><span style="font-weight:700;color:#15191e">' + esc(o.name) + '</span> — ' + esc(o.desc) + '</div>';
+    }).join('');
+  }
+
+  // ---------------------------------------------------------------------------
+  // style-hover shim — applies the [style-hover] declarations on hover/focus
+  // ---------------------------------------------------------------------------
+  function wireHovers() {
+    var els = document.querySelectorAll('[style-hover]');
+    els.forEach(function (el) {
+      var decls = el.getAttribute('style-hover').split(';').map(function (d) {
+        var i = d.indexOf(':');
+        if (i < 0) return null;
+        return { prop: d.slice(0, i).trim(), val: d.slice(i + 1).trim() };
+      }).filter(Boolean);
+
+      var apply = function () {
+        el._prev = decls.map(function (d) { return el.style.getPropertyValue(d.prop); });
+        decls.forEach(function (d) { el.style.setProperty(d.prop, d.val); });
+      };
+      var restore = function () {
+        if (!el._prev) return;
+        decls.forEach(function (d, i) {
+          if (el._prev[i]) el.style.setProperty(d.prop, el._prev[i]);
+          else el.style.removeProperty(d.prop);
+        });
+      };
+      el.addEventListener('mouseenter', apply);
+      el.addEventListener('mouseleave', restore);
+      el.addEventListener('focus', apply);
+      el.addEventListener('blur', restore);
+    });
+  }
+
+  function wireNavHovers() {
+    document.querySelectorAll('.navlink').forEach(function (a) {
+      a.addEventListener('mouseover', function () { if (a._active) return; a.style.opacity = '1'; a.style.color = '#6f879c'; });
+      a.addEventListener('mouseout', function () { if (a._active) return; a.style.opacity = '.85'; a.style.color = '#fffdf9'; });
+    });
+  }
+
+  function wirePrint() {
+    document.querySelectorAll('[data-print-cv]').forEach(function (b) {
+      b.addEventListener('click', function () { window.print(); });
+    });
+  }
+
+  // ---------------------------------------------------------------------------
+  // Scroll reveals, word-rise text, nav active-state, scroll progress,
+  // pointer parallax, and the scroll-driven glass-atom canvas.
+  // (Ported from the original DC componentDidMount.)
+  // ---------------------------------------------------------------------------
+  function mount() {
+    // ---- staggered scroll reveals ----
+    var els = [].slice.call(document.querySelectorAll('.reveal'));
+    var showAll = function () { els.forEach(function (el) { el.classList.add('in'); }); };
+    var groups = new Map();
+    els.forEach(function (el) { var p = el.parentElement; var a = groups.get(p) || []; a.push(el); groups.set(p, a); });
+    groups.forEach(function (arr) { if (arr.length > 1) arr.forEach(function (el, i) { el.style.transitionDelay = (Math.min(i, 8) * 70) + 'ms'; }); });
+
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+      }, { threshold: 0.1, rootMargin: '0px 0px -6% 0px' });
+      els.forEach(function (el) { io.observe(el); });
+      var vh = window.innerHeight || 800;
+      els.forEach(function (el) { if (el.getBoundingClientRect().top < vh * 0.92) el.classList.add('in'); });
+      setTimeout(showAll, 2600);
+    } else { showAll(); }
+    window.addEventListener('beforeprint', showAll);
+
+    // ---- word-by-word mask-rise on scroll-in ----
+    var splitWords = function (el) {
+      var inners = [], out = document.createDocumentFragment();
+      [].slice.call(el.childNodes).forEach(function (node) {
+        if (node.nodeType === 3) {
+          node.textContent.split(/(\s+)/).forEach(function (tok) {
+            if (tok === '') return;
+            if (/^\s+$/.test(tok)) { out.appendChild(document.createTextNode(' ')); return; }
+            var w = document.createElement('span'); w.className = 'w';
+            var inner = document.createElement('span'); inner.className = 'wi'; inner.textContent = tok;
+            w.appendChild(inner); out.appendChild(w); inners.push(inner);
+          });
+        } else if (node.nodeName === 'BR') {
+          out.appendChild(document.createElement('br'));
+        } else {
+          var w = document.createElement('span'); w.className = 'w';
+          var inner = node.cloneNode(true);
+          inner.classList ? inner.classList.add('wi') : (inner.className = (inner.className || '') + ' wi');
+          w.appendChild(inner); out.appendChild(w); inners.push(inner);
+        }
+      });
+      el.innerHTML = ''; el.appendChild(out);
+      return inners;
+    };
+    var atexts = [].slice.call(document.querySelectorAll('.atext'));
+    atexts.forEach(function (el) {
+      var inners = splitWords(el);
+      inners.forEach(function (inn, i) { inn.style.transitionDelay = (Math.min(i, 20) * 42) + 'ms'; });
+    });
+    var fireText = function (el) { if (el._lit) return; el._lit = true; el.classList.add('in'); };
+    if ('IntersectionObserver' in window) {
+      var tio = new IntersectionObserver(function (ents) {
+        ents.forEach(function (e) { if (e.isIntersecting) { fireText(e.target); tio.unobserve(e.target); } });
+      }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
+      atexts.forEach(function (el) { tio.observe(el); });
+      var vhh = window.innerHeight || 800;
+      atexts.forEach(function (el) { if (el.getBoundingClientRect().top < vhh * 0.95) fireText(el); });
+      setTimeout(function () { atexts.forEach(fireText); }, 2800);
+    } else { atexts.forEach(fireText); }
+
+    // ---- nav active-state + scroll progress ----
+    var nav = [].slice.call(document.querySelectorAll('nav a[href^="#"]'));
+    var sections = nav.map(function (a) { return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+    var prog = document.getElementById('prog');
+    var needNav = true;
+    window.addEventListener('scroll', function () { needNav = true; }, { passive: true });
+
+    var updateNav = function () {
+      var vh = window.innerHeight, line = vh * 0.42;
+      var active = -1;
+      sections.forEach(function (s, i) { var r = s.getBoundingClientRect(); if (r.top <= line && r.bottom > line) active = i; });
+      nav.forEach(function (a, i) {
+        var on = i === active;
+        a._active = on;
+        a.style.color = on ? '#6f879c' : '#fffdf9';
+        a.style.opacity = on ? '1' : '0.85';
+      });
+    };
+
+    // ---- pointer parallax ----
+    var px = 0, py = 0, tpx = 0, tpy = 0;
+    window.addEventListener('pointermove', function (e) {
+      tpx = (e.clientX / window.innerWidth - 0.5) * 2;
+      tpy = (e.clientY / window.innerHeight - 0.5) * 2;
+    }, { passive: true });
+
+    // ---- scroll-driven glass atom ----
+    var canvas = document.getElementById('prism');
+    var reduced = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+    if (!canvas) return;
+    var ctx = canvas.getContext('2d');
+    var w, h, shells, nucleons;
+    var scrollP = 0, scrollPv = 0, t0 = performance.now(), raf = null, running = true;
+
+    var TAU = Math.PI * 2;
+
+    var buildAtom = function () {
+      var shell = function (rx, ry, tiltX, tiltZ, n, speed, phase) { return { rx: rx, ry: ry, tiltX: tiltX, tiltZ: tiltZ, n: n, speed: speed, phase: phase }; };
+      shells = [
+        shell(1.28, 1.02, 0.55, 0.00, 2, 1.00, 0.0),
+        shell(1.52, 1.18, -0.70, 1.15, 3, -0.66, 1.3),
+        shell(1.12, 1.40, 1.20, -0.55, 2, 0.82, 2.5)
+      ];
+      nucleons = [];
+      var R = 0.34, count = 11;
+      for (var i = 0; i < count; i++) {
+        var a = Math.acos(1 - 2 * (i + 0.5) / count);
+        var b = TAU * i * 0.6180339;
+        // deterministic radius jitter (no Math.random — keeps render stable)
+        var rr = R * (0.45 + 0.55 * (0.5 + 0.5 * Math.sin(i * 12.9898)));
+        nucleons.push({
+          x: Math.sin(a) * Math.cos(b) * rr,
+          y: Math.sin(a) * Math.sin(b) * rr,
+          z: Math.cos(a) * rr,
+          proton: i % 2 === 0
+        });
+      }
+    };
+
+    var resize = function () {
+      var dpr = Math.min(window.devicePixelRatio || 1, 2);
+      w = window.innerWidth; h = window.innerHeight;
+      canvas.width = w * dpr; canvas.height = h * dpr;
+      canvas.style.width = w + 'px'; canvas.style.height = h + 'px';
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    };
+
+    var draw = function (now) {
+      if (!ctx) return;
+      ctx.clearRect(0, 0, w, h);
+
+      var t = (now - t0) / 1000, sp = scrollP;
+      var aY = (reduced ? 0 : t * 0.10) + sp * Math.PI * 1.5 + px * 0.45;
+      var aX = -0.42 + (reduced ? 0 : Math.sin(t * 0.16) * 0.05) + py * 0.22;
+      var minD = Math.min(w, h);
+      var S = minD * (w < 720 ? 0.155 : 0.205) * (1 + sp * 0.05);
+      var cx = (w < 720 ? w * 0.5 : w * 0.72) + px * 36;
+      var cy = h * 0.40 - sp * h * 0.62 + py * 26;
+
+      var rot = function (p) {
+        var cyA = Math.cos(aY), syA = Math.sin(aY);
+        var x = p.x * cyA + p.z * syA, z = -p.x * syA + p.z * cyA, y = p.y;
+        var cxA = Math.cos(aX), sxA = Math.sin(aX);
+        return { x: x, y: y * cxA - z * sxA, z: y * sxA + z * cxA };
+      };
+      var proj = function (p) { return { x: cx + p.x * S, y: cy - p.y * S, z: p.z }; };
+      var orient = function (p, tx, tz) {
+        var cX = Math.cos(tx), sX = Math.sin(tx);
+        var y1 = p.y * cX - p.z * sX, z1 = p.y * sX + p.z * cX, x1 = p.x;
+        var cZ = Math.cos(tz), sZ = Math.sin(tz);
+        return { x: x1 * cZ - y1 * sZ, y: x1 * sZ + y1 * cZ, z: z1 };
+      };
+      var pv = scrollPv;
+      var boost = reduced ? 0 : 1 + Math.min(pv * 60, 6);
+
+      ctx.globalCompositeOperation = 'lighter';
+
+      var halo = ctx.createRadialGradient(cx, cy, 0, cx, cy, S * 2.7);
+      halo.addColorStop(0, 'rgba(120,150,176,' + (0.15 + Math.min(pv * 40, 0.25)).toFixed(3) + ')');
+      halo.addColorStop(0.45, 'rgba(111,135,156,0.05)');
+      halo.addColorStop(1, 'rgba(111,135,156,0)');
+      ctx.fillStyle = halo; ctx.fillRect(0, 0, w, h);
+
+      var elecAt = function (sh, a) { return proj(rot(orient({ x: Math.cos(a) * sh.rx, y: Math.sin(a) * sh.ry, z: 0 }, sh.tiltX, sh.tiltZ))); };
+
+      var RING = 80, i, k;
+      for (i = 0; i < shells.length; i++) {
+        var sh = shells[i];
+        ctx.beginPath();
+        for (k = 0; k <= RING; k++) {
+          var p = elecAt(sh, TAU * k / RING);
+          if (k === 0) ctx.moveTo(p.x, p.y); else ctx.lineTo(p.x, p.y);
+        }
+        ctx.strokeStyle = 'rgba(150,178,200,0.15)'; ctx.lineWidth = 1; ctx.stroke();
+      }
+
+      var electrons = [];
+      for (i = 0; i < shells.length; i++) {
+        var sh2 = shells[i];
+        for (var e = 0; e < sh2.n; e++) {
+          var base = sh2.phase + TAU * e / sh2.n + t * sh2.speed * boost;
+          var ep = elecAt(sh2, base);
+          electrons.push({ sh: sh2, base: base, p: ep, z: ep.z });
+        }
+      }
+
+      var drawElectron = function (el) {
+        var TR = 16, s;
+        for (s = TR; s >= 1; s--) {
+          var tp = elecAt(el.sh, el.base - s * 0.045);
+          var f = 1 - s / TR;
+          var depth = 0.7 + (tp.z + 1.6) / 3.2;
+          var r = (1.6 + f * 4.0) * depth;
+          var g = ctx.createRadialGradient(tp.x, tp.y, 0, tp.x, tp.y, r * 2.6);
+          g.addColorStop(0, 'rgba(150,178,200,' + (0.045 * f).toFixed(3) + ')');
+          g.addColorStop(1, 'rgba(111,135,156,0)');
+          ctx.fillStyle = g; ctx.beginPath(); ctx.arc(tp.x, tp.y, r * 2.6, 0, TAU); ctx.fill();
+        }
+        var depth2 = 0.7 + (el.z + 1.6) / 3.2;
+        var rr = 5.2 * depth2;
+        var gg = ctx.createRadialGradient(el.p.x, el.p.y, 0, el.p.x, el.p.y, rr * 3.4);
+        gg.addColorStop(0, 'rgba(165,194,217,0.55)');
+        gg.addColorStop(0.4, 'rgba(111,135,156,0.22)');
+        gg.addColorStop(1, 'rgba(111,135,156,0)');
+        ctx.fillStyle = gg; ctx.beginPath(); ctx.arc(el.p.x, el.p.y, rr * 3.4, 0, TAU); ctx.fill();
+        ctx.fillStyle = 'rgba(255,253,249,0.95)'; ctx.beginPath(); ctx.arc(el.p.x, el.p.y, rr * 0.48, 0, TAU); ctx.fill();
+      };
+
+      electrons.filter(function (e2) { return e2.z < 0; }).sort(function (a, b) { return a.z - b.z; }).forEach(drawElectron);
+
+      var cb = ctx.createRadialGradient(cx, cy, 0, cx, cy, S * 0.72);
+      cb.addColorStop(0, 'rgba(180,205,226,0.38)');
+      cb.addColorStop(1, 'rgba(111,135,156,0)');
+      ctx.fillStyle = cb; ctx.beginPath(); ctx.arc(cx, cy, S * 0.72, 0, TAU); ctx.fill();
+
+      var core = nucleons.map(function (nu) { var p = proj(rot(nu)); return { p: p, z: p.z, proton: nu.proton }; }).sort(function (a, b) { return a.z - b.z; });
+      for (i = 0; i < core.length; i++) {
+        var nu2 = core[i];
+        var r2 = S * 0.13 * (0.78 + nu2.z + 0.34);
+        var g2 = ctx.createRadialGradient(nu2.p.x - r2 * 0.3, nu2.p.y - r2 * 0.32, 0, nu2.p.x, nu2.p.y, r2);
+        if (nu2.proton) { g2.addColorStop(0, 'rgba(255,253,249,0.92)'); g2.addColorStop(0.5, 'rgba(176,198,217,0.5)'); g2.addColorStop(1, 'rgba(111,135,156,0.06)'); }
+        else { g2.addColorStop(0, 'rgba(190,206,220,0.78)'); g2.addColorStop(0.5, 'rgba(120,146,168,0.4)'); g2.addColorStop(1, 'rgba(73,87,100,0.04)'); }
+        ctx.fillStyle = g2; ctx.beginPath(); ctx.arc(nu2.p.x, nu2.p.y, r2, 0, TAU); ctx.fill();
+        ctx.fillStyle = 'rgba(255,253,249,0.85)'; ctx.beginPath(); ctx.arc(nu2.p.x - r2 * 0.3, nu2.p.y - r2 * 0.34, r2 * 0.17, 0, TAU); ctx.fill();
+      }
+
+      electrons.filter(function (e2) { return e2.z >= 0; }).sort(function (a, b) { return a.z - b.z; }).forEach(drawElectron);
+
+      ctx.globalCompositeOperation = 'source-over';
+    };
+
+    var loop = function () {
+      if (!running || document.hidden) { raf = null; return; }
+      raf = requestAnimationFrame(loop);
+      var de = document.documentElement;
+      var max = (de.scrollHeight - de.clientHeight) || 1;
+      var sp = Math.min(1, Math.max(0, (window.scrollY || de.scrollTop) / max));
+      scrollPv = scrollPv * 0.82 + Math.abs(sp - scrollP) * 0.18;
+      scrollP = sp;
+      if (prog) prog.style.width = (sp * 100).toFixed(2) + '%';
+      if (needNav) { updateNav(); needNav = false; }
+      px += (tpx - px) * 0.06;
+      py += (tpy - py) * 0.06;
+      draw(performance.now());
+    };
+
+    buildAtom();
+    resize();
+    window.addEventListener('resize', resize);
+    document.addEventListener('visibilitychange', function () { if (!document.hidden && running && !raf) loop(); });
+    loop();
+  }
+
+  function init() {
+    render();
+    wireHovers();
+    wireNavHovers();
+    wirePrint();
+    mount();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+</body>
+</html>
