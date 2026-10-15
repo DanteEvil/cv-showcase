@@ -6,3 +6,6 @@ node_modules/
 .worktrees/
 worktrees/
 .superpowers/
+
+# Private study material, not for deploy
+docs/learn/
